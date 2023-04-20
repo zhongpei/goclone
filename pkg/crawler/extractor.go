@@ -32,7 +32,8 @@ func Extractor(link string, projectPath string) {
 	// get the html body
 	resp, err := http.Get(link)
 	if err != nil {
-		panic(err)
+		//panic(err)
+        return
 	}
 
 	// Closure
